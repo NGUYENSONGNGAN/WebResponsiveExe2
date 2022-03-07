@@ -1,0 +1,47 @@
+.grid{
+    width: 100%;
+    padding: 0;
+    display: block;
+}
+.grid.wide{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.row
+{
+    display: flex;
+    flex-wrap: wrap;
+}
+@media (min-width: 740px) and (max-width:1023px){
+    .wide.grid{
+        width:644px;
+    }
+}
+@media (max-width: 740px)
+{
+    .row
+    {
+        margin-left:-8px;
+        margin-right:-8px;
+    }
+}
+/* pc */
+@media (min-width: 1024px) and (max-width:1239px){
+    .wide.grid{
+        width:984px;
+    }
+    .wide .row
+    {
+        margin-left:-12px;
+        margin-right:-12px;
+    }
+}
+
+@media (min-width: 1113px)
+{
+    .row
+    {
+        margin-left:-12px;
+        margin-right:-12px;
+    }
+}
